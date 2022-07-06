@@ -82,3 +82,22 @@ h1 {
 .subhead {
   font-size: 1.4rem;
 }
+
+section.hero {
+  color: white;
+  height: 90vh;
+  animation: moveDown 1s ease-in-out forwards;
+  opacity: 0;
+
+  .down-arrow {
+    stroke: white;
+    position: absolute;
+    bottom: 8em;
+    width: 1em;
+    animation: moveArrow 1s alternate-reverse infinite;
+
+    path {
+      fill: white;
+    }
+  }
+}
